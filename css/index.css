@@ -1,0 +1,254 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+@font-face {
+font-family: 'BlackChancery';
+font-style: normal;
+font-weight: normal;
+src: local('BlackChancery'), url('BLKCHCRY.woff') format('woff');
+}
+img
+{
+	border: 0;
+}
+.clear
+{
+	clear: both;
+}
+
+/* ************* snowfall *********** */
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+/* ************* /snowfall *********** */
+
+
+.main-banner
+{
+	background: url(../images/main-banner.jpg);
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	z-index: -1;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.main-banner img
+{
+	width: 100%;
+}
+.bottom-container
+{
+	background: url(../images/bottom-banner.jpg) bottom;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	z-index: -1;
+    padding-bottom: 50px;
+}
+.container
+{
+	max-width: 1024px;
+	margin: 00px auto;
+	/*margin-top: -35px;*/
+}
+.container h1
+{
+	font-size: 50px;
+	font-family: BlackChancery;
+	text-align: center;
+	color: #fff;
+	padding-top: 25px;
+	text-shadow:2px 2px 2px #000;
+}
+h4
+{
+	font-size: 30px;
+	font-family: BlackChancery;
+	text-align: left;
+	color: #000;
+	text-shadow:1px 1px 1px #bababa;
+	margin: 0;
+}
+h2
+{
+	font-size: 22px;
+	text-align: left;
+	font-family: BlackChancery;
+	color: #000;
+	text-shadow:1px 1px 1px #bababa;
+	margin: 10px 0px;
+}
+.events-container
+{
+	padding: 30px;
+}
+.events-container .events-block
+{
+	margin: 30px auto;
+}
+.events-container .events-block .even-event-img
+{
+	width: 25%;
+	float: left;
+}
+.events-container .events-block .even-event-img img
+{
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 100%;
+	border: 1px solid #000;
+}
+.events-container .events-block .even-event-container
+{
+	width: 69%;
+	float: right;
+}
+.events-container .events-block .content
+{	
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	max-height: 180px;
+	overflow: auto;
+	color: #fff;
+	font-family: calibri;
+	font-size: 16px;
+}
+.events-container .events-block .content b
+{
+	font-size: 20px;
+	text-shadow:0;
+}
+.events-container .events-block .odd-event-img
+{
+	width: 25%;
+	float: right;
+}
+.events-container .events-block .odd-event-img img
+{
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 100%;
+	border: 1px solid #000;
+}
+.events-container .events-block .odd-event-container
+{
+	width: 69%;
+	float: left;
+}
+.events-container .col-xs-12
+{
+	margin-bottom: 20px;
+}
+.ih-item
+{
+	margin: 0 auto;
+}
+.popup-img
+{
+	width: 45%;
+	float: left;
+	margin-right: 30px;
+}
+.popup-img img
+{
+	width: 100%;
+}
+.gap
+{
+	height: 10px
+}
+@media (max-width: 768px){
+	.main-banner
+	{
+		background: #015199 url(../images/main-banner-1.jpg) no-repeat bottom right;
+		background-size: 100%;
+		background-attachment: scroll;
+	}
+	.bottom-container
+	{
+		/*margin-top: -100px;*/
+		background: url(../images/bottom-banner.jpg) bottom;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
+		z-index: -1;
+	    padding-bottom: 50px;
+	    min-height: 400px;
+	}
+}
+
+/* I-pad3,4,air Landscape */
+@media (min-width : 981px) and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width : 769px) and (max-width: 800px) {
+	.main-banner {height: 660px;}
+}
+
+/* I-pad3,4,air portrait */
+@media (min-width : 641px) and (max-width: 768px) {
+	.main-banner {height: 660px;}
+}
+
+@media (min-width : 601px) and (max-width: 640px) {
+	.main-banner {height: 547px;}
+}
+
+
+@media (min-width : 569px) and (max-width: 600px) {
+	.main-banner {height: 512px;}
+}
+
+/* Iphone5+ phone Landscape */
+@media (min-width : 535px) and (max-width: 568px) {
+	.main-banner {height: 484px;}
+}
+
+/* Android phone Landscape */
+@media (min-width : 481px) and (max-width: 534px) {
+	.main-banner {height: 450px;}
+}
+
+@media (min-width : 361px) and (max-width: 480px) { 
+	.main-banner {height: 300px;}
+}
+
+/* Android high-range phone portrait */
+@media (min-width : 321px) and (max-width: 360px) {
+	.main-banner {height: 263px;}
+}
+
+/* Iphone4+, Android mid-range phone portrait */
+@media (max-width : 320px) {
+	.main-banner {height: 263px;}
+}
