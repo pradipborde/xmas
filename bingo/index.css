@@ -1,0 +1,44 @@
+      body{
+       font-size: 18px;
+   }
+   div {
+    text-align: center;
+}
+
+.bigNumberDisplay {
+    font-size: 8em;
+    color: #1122FF;
+}
+
+.numbersTable {
+    font-size: 1.8em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border: solid 1px #999;
+}
+
+td {
+    min-width: 100px;
+    color: #aaa;
+}
+
+td.selected {
+    color: #f00;
+}
+#btnGenerate{
+   background: none repeat scroll 0 0 #FF6600;
+   border-radius: 0;
+   font-size: 12px;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   border: medium none;
+   color: #FFFFFF;
+}
+
